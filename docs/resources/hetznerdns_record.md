@@ -1,6 +1,6 @@
 # hetznerdns_record Resource
 
-Provides a Hetzner DNS Recrods resource to create, update and delete DNS Records.
+Provides a Hetzner DNS Records resource to create, update and delete DNS Records.
 
 ## Example Usage
 
@@ -43,7 +43,7 @@ a zone and then copy the id.
 
 ```
 curl "https://dns.hetzner.com/api/v1/records" \
-     -H 'Auth-API-Token: $HETZNER_DNS_API_TOKEN' | jq .
+     -H "Auth-API-Token: $HETZNER_DNS_API_TOKEN" | jq .
 
 {
   "records": [
